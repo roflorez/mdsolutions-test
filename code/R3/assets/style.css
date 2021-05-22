@@ -1,0 +1,36 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.video__container{
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    width: 400px;
+}
+
+.play, .pause{
+    position: absolute;
+    top: 50%;
+    right: 35%;
+}
+
+.text__container{
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 400px;
+}
+
+@media (max-width: 768px){
+   main{
+    display: flex;
+    flex-direction: column;
+   }
+}
+
