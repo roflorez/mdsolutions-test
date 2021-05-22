@@ -7,23 +7,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/2cf57d7666.js" crossorigin="anonymous"></script>
     <title>Solicitud R3</title>
 </head>
 <body>
-    <main class="container">
-        <section class="video__container" id="video_player">
-            <video src="./media/Bowie - lets dance.mp4" id="video" controls></video>
-            <div id="video_controls">
-                <button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>Play</button>
-            </div>
+    <main>
+        <section>
+            <button class="open__modal"><img src="../R3/media/video-preview.png" alt=""></button>
+                <div class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">×</span>
+                        <video src="../R3/media/Bowie - lets dance.mp4" id="video" controls></video>
+                        <div id="video_controls">
+                            <button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'></button>
+                        </div>
+                    </div>
+                </div>
         </section>
         <section class="text__container">
-            <h1 class="title">Give the world the answer they need, become a Supernatural Partner today.</h1>
+            <h1>Give the world the answer they need, become a Supernatural Partner today.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis odit molestiae laudantium minus assumenda quam temporibus accusamus, culpa quas. Veritatis quibusdam eos blanditiis, nesciunt beatae laborum dolorem repellendus natus labore!
             Eum voluptates placeat doloribus at eos cumque sunt nam vel, nemo impedit animi blanditiis amet aliquam saepe! Ipsam natus aliquid officia veritatis iste, quo veniam optio doloremque officiis. Corporis, eligendi?</p>
         </section>
     </main>
-    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
