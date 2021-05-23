@@ -2,11 +2,12 @@
 fetch("http://dummy.restapiexample.com/api/v1/employees").then(
   res => {
     res.json().then(
-      data => {
-        if (data.data.length > 0) {
+      userProperties => {
+        if (userProperties.data.length > 0) {
+          console.log(userProperties)
           var item = "";
             //empieza el loop
-          data.data.forEach((itemData) => {
+          userProperties.data.forEach((itemData) => {
             item += "<tr>";
             item += "<td>" + itemData.id + "</td>";
             item += "<td>" + itemData.employee_name + "</td>";
@@ -14,7 +15,7 @@ fetch("http://dummy.restapiexample.com/api/v1/employees").then(
             item += "<td>" + itemData.employee_salary + "</td></tr>";
           });
             //termina el lopp
-          document.getElementById('data').innerHTML = item;
+          document.getElementById('data_container').innerHTML = item;
         }
       }
     )
