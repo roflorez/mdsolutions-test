@@ -8,6 +8,7 @@ function startMediaPlayer() {
     mediaPlayer.controls = false;
 }
 
+//modal
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".open__modal");
 const closeButton = document.querySelector(".close-button");
@@ -26,7 +27,7 @@ trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
 
-
+//boton play-pausa dentro del modal
 function togglePlayPause() {
     if (mediaPlayer.paused || mediaPlayer.ended) {
        btn.title = 'pause';
